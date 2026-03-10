@@ -1,3 +1,7 @@
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     margin: 0;
     background-color: rgb(199, 235, 141);
@@ -8,36 +12,31 @@ body{
 }
 
 
-.home{
-    margin: 10px;
-    margin-top: 120px; /* supaya tidak tertutup header */
-    padding: 25px;
-    padding-top: 70px;
-    background-color: white;
-    border-radius: 10px;
-}
 
 
 header{
     background-color: rgb(71, 211, 129);
-    padding: 15px;
+    padding: 10px;
+    margin-left: 5px;
     font-family: cursive;
     font-size: 150%;
-    text-align: center;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    width: 100%;
+    width: 98%;
     border-radius: 0 0 10px 10px;
     box-shadow: 3px 3px 5px -2px black;
-
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 
 header img{
-    width: 100px;
+    width: 110px;
     transition: 0.5s;
+    margin-left: 20px;
 }
 
 header img:hover{
@@ -49,6 +48,8 @@ header img:hover{
 
 nav{
     padding: 10px 0px;
+    text-align: right;
+    padding-right: 15px;
 }
 
 a{
@@ -66,14 +67,91 @@ nav a:hover{
     border-radius: 10px;
 }
 
-
 .banner{
-    padding: 10px;
+    padding:5px;
     border-radius: 10px;
     transition: 0.5s;
 }
 
-.descHome{
-    width: 60%;
-    margin-left: 30px;
+.banner a {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.title{
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    margin: 0;
+    padding-left: 15px;
+    padding: 15px 15px;
+    transition: 0.5s; 
+}
+.title:hover{
+    transform: scale(1.05);
+    background-color: #00ffff6e;
+    border-radius: 10px;  
+}
+
+
+.description{
+    margin-left: 25px;
+    margin-right: 20px;
+    margin-top: 200px;
+    text-align: justify;
+    line-height: 1.5;
+    font-size: 1.1em;
+    color: #333;
+    background-color: #f9f9f9;
+    padding: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+body.home-page {
+    background-image: url('homebg.png');
+}
+
+.about .description {
+    text-align: center;
+}
+.about .description img{
+    width: 300px;
+    border-radius: 10px;
+}
+
+.cardProfile{
+    margin: 150px auto 0 auto;
+    background-color: rgb(210, 255, 242);
+    padding: 15px;
+    width: 300px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.imgProfile img{
+    width: 100%;
+}
+
+.medsos{
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    height: 40px;
+    padding-top: 5px;
+}
+
+.medsos a{
+    text-decoration: none;
+    padding: 10px 10px;
+    font-size: 24px;
+    transition: 0.5s;
+}
+
+.medsos a:hover {
+    background-color: cornflowerblue;
+    border-radius: 10px;
 }
