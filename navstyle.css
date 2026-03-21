@@ -1,0 +1,188 @@
+html{
+    scroll-padding-top: 120px;
+}
+
+html, body {
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    background-color: rgb(199, 235, 141);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+
+header{
+    background-color: rgb(71, 211, 129);
+    padding: 10px;
+    margin-left: 5px;
+    font-family: cursive;
+    font-size: 150%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 98%;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 3px 3px 5px -2px black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+header img{
+    width: 110px;
+    transition: 0.5s;
+    margin-left: 20px;
+}
+
+header img:hover{
+    transform: scale(1.05);
+    background-color: #00ffff6e;
+    border-radius: 10px;
+}
+
+
+nav{
+    padding: 10px 0px;
+    text-align: right;
+    padding-right: 15px;
+}
+
+a{
+    text-decoration: none;
+}
+
+nav a{
+    color: white;
+    padding: 10px 15px;
+    transition: 0.5s;
+}
+
+nav a:hover{
+    background-color: #00ffff6e;
+    border-radius: 10px;
+}
+
+
+.banner a {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.title{
+    font-size: 30px;
+    color: #ffffff;
+    padding: 15px 15px;
+    transition: 0.5s; 
+}
+.title:hover{
+    transform: scale(1.05);
+    background-color: #00ffff6e;
+    border-radius: 10px;  
+}
+
+section {   
+    padding-top: 120px;
+    padding-bottom: 60px;
+}
+
+.home-section .description {
+    margin-top: 80px;
+}
+
+.description{
+    margin: 0 25px 0 25px;
+    text-align: justify;
+    line-height: 1.5;
+    font-size: 1.1em;
+    color: #333;
+    background-color: #f9f9f9;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+body.home-page {
+    background-image: url('homebg.png');
+}
+
+.about-section {
+    background: linear-gradient(135deg, #2e7d32 0%, #66bb6a 50%, #a5d6a7 100%);
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.about-section .description,
+.about-section .description-about-content,
+.about-section .p {
+    text-align: justify;
+}
+
+.about-images {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.about-section .description img,
+.about-content img {
+    width: 300px;
+    border-radius: 10px;
+}
+
+.howto-section .description {
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.profile-section {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.cardProfile{
+    margin: 0 auto;
+    background-color: rgb(210, 255, 242);
+    padding: 15px;
+    width: 300px;
+    text-align: center;
+    border-radius: 10px;
+    line-height: 1.5;
+}
+
+.cardProfile img{
+    width: 300px;
+    height: 380px;
+}
+
+.medsos{
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    height: 40px;
+    padding-top: 5px;
+}
+
+.medsos a{
+    text-decoration: none;
+    padding: 10px 10px;
+    font-size: 24px;
+    transition: 0.5s;
+}
+
+.medsos a:hover {
+    background-color: cornflowerblue;
+    border-radius: 10px;
+}
